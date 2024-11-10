@@ -1,0 +1,54 @@
+name: juice
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_onboarding_slider:
+  url_launcher: ^6.0.20
+  google_fonts: ^6.1.0
+  http: ^1.2.2
+  cached_network_image: ^3.2.3
+  intl : ^0.17.0
+
+
+
+
+  cupertino_icons: ^1.0.8
+  #webview_flutter: 3.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mysql_client: ^0.0.27
+  flutter_lints: ^4.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - asset/img/
+
+  fonts:
+    - family: parisienne  # family 키에 폰트 이름을 지정
+      fonts:
+        - asset: asset/font/Parisienne-Regular.ttf  # ➋ 등록할 폰트 파일의 위치
+
+    - family: sunflower
+      fonts:
+        - asset: asset/font/Sunflower-Light.ttf
+        - asset: asset/font/Sunflower-Medium.ttf
+          weight: 500  # 폰트의 두께. FontWeight 클래스의 값
+        - asset: asset/font/Sunflower-Bold.ttf
+          weight: 700
